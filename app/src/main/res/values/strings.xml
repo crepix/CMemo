@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CMemo</string>
+    <string name="action_introduction">説明書</string>
+    <string name="background">background</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="dust">dust</string>
+    <string name="search_hint">フィルタ</string>
+    <string name="title_activity_write">WriteActivity</string>
+    <string name="text_hint">ここに入力</string>
+    <string name="text_created">作成日：</string>
+    <string name="text_updated">更新日：</string>
+    <string name="action_all_clear">メモを全部消す</string>
+    <string name="action_text_up">文字を大きくする</string>
+    <string name="action_text_down">文字を小さくする</string>
+    <string name="action_back_change">背景を変える</string>
+</resources>

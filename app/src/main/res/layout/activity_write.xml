@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:background="@drawable/tile_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    tools:context="crepix.java_conf.gr.jp.cmemo.activities.WriteActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPinkToolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notification_box"
+                    android:src="@android:drawable/ic_menu_info_details"
+                    android:contentDescription="@string/dust"
+                    android:layout_alignTop="@+id/mike_box"
+                    android:layout_toLeftOf="@+id/mike_box"
+                    android:layout_toStartOf="@+id/mike_box" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mike_box"
+                    android:src="@android:drawable/ic_btn_speak_now"
+                    android:contentDescription="@string/dust"
+                    android:layout_alignTop="@+id/delete_box"
+                    android:layout_toLeftOf="@+id/delete_box"
+                    android:layout_toStartOf="@+id/delete_box" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/delete_box"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:contentDescription="@string/dust"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_write" />
+
+</android.support.design.widget.CoordinatorLayout>
